@@ -23,6 +23,7 @@ public class ContratRestController {
 		List<Contrat> listContrats = contratService.retrieveAllContrats();
 		return listContrats;
 	}
+
 	// http://localhost:8089/Kaddem/contrat/retrieve-contrat/8
 	@GetMapping("/retrieve-contrat/{contrat-id}")
 	public Contrat retrieveContrat(@PathVariable("contrat-id") Integer contratId) {
